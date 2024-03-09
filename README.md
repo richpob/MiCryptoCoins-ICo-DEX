@@ -100,7 +100,7 @@ contract YoppenToken is ERC20, ERC20Burnable, ERC20Pausable, Ownable, ERC20Permi
 - **ERC20Permit**: Permite a los usuarios realizar transacciones sin pagar gas, firmando una autorización.
 
 ## Funciones Principales
-- **constructor(address initialOwner)**: Establece el nombre y símbolo del token, el propietario inicial y habilita los permisos según el estándar ERC20Permit.
+- **constructor(address initialOwner)**: Establece el nombre y símbolo del token, el propietario inicial y habilita los permisos según el estándar ERC20Permit.El constructor del contrato crea el token con el nombre "Yoppen" y el símbolo "YPN", y acuña inicialmente 1,000,000 de tokens para el creador del contrato. La función mint permite al propietario del contrato acuñar más tokens en el futuro.
 - **pause()**: Pausa todas las transferencias de tokens.
 - **unpause()**: Reanuda todas las transferencias de tokens.
 - **mint(address to, uint256 amount)**: Permite al propietario del contrato acuñar nuevos tokens a una dirección específica.
