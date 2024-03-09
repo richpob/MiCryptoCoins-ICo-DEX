@@ -130,8 +130,11 @@ Este proyecto está bajo la licencia MIT.
 ## Resultado del despliegue en Renix
 
 URL TX https://sepolia.etherscan.io/tx/0x410ff30a0749306034cf9c95f1bc70656ee89960720a60ce16a9d56c0bc2325a
+
 URL del Contrati https://sepolia.etherscan.io/address/0xaa7a2a9cc60f5a696f37af3bde57fa06b884aed5
+
 URL del Token Yoppen https://sepolia.etherscan.io/token/0xaa7a2a9cc60f5a696f37af3bde57fa06b884aed5
+
 
 ### Imagen del contrato Toekn ERC20
 ![image](https://github.com/richpob/MiCryptoCoins-ICo-DEX/assets/133718913/707c175f-f11c-43ec-86eb-15143f2a7735)
