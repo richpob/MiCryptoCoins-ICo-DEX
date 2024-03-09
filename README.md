@@ -33,11 +33,41 @@ Para comenzar a trabajar con el proyecto, clona este repositorio y sigue los pas
 npm install
 truffle compile
 ```
-##Contribuir
+## Contribuir
 Si estás interesado en contribuir al proyecto Yoppen, por favor lee CONTRIBUTING.md para más información sobre cómo empezar.
 
-##Licencia
+## Licencia
 Este proyecto está bajo la licencia MIT. Ver LICENSE para más detalles.
 
-##Contacto
+## Contacto
 Para más información, por favor contacta a richard.poblete@hotmail.com.
+
+# Creación de Token ERC20 YoppenToken
+
+## Descripción
+`YoppenToken` es un token ERC-20 desarrollado en Solidity que incorpora varias extensiones de la librería OpenZeppelin para proporcionar funcionalidades avanzadas como quema de tokens, pausabilidad y permisos. Este token ha sido diseñado para ser utilizado en la red de prueba Sepolia de Ethereum, facilitando una amplia gama de operaciones financieras descentralizadas.
+
+## Características
+- **ERC20**: Estándar básico para la creación de tokens intercambiables en la red Ethereum.
+- **ERC20Burnable**: Permite a los titulares de tokens destruir (quemar) sus tokens, reduciendo el suministro total.
+- **ERC20Pausable**: Introduce la capacidad de pausar y despausar las transferencias de tokens, lo que puede ser útil en situaciones de emergencia o mantenimiento.
+- **Ownable**: Restringe ciertas acciones solo al propietario del contrato, como la emisión de nuevos tokens o la pausa del contrato.
+- **ERC20Permit**: Permite a los usuarios realizar transacciones sin pagar gas, firmando una autorización.
+
+## Funciones Principales
+- **constructor(address initialOwner)**: Establece el nombre y símbolo del token, el propietario inicial y habilita los permisos según el estándar ERC20Permit.
+- **pause()**: Pausa todas las transferencias de tokens.
+- **unpause()**: Reanuda todas las transferencias de tokens.
+- **mint(address to, uint256 amount)**: Permite al propietario del contrato acuñar nuevos tokens a una dirección específica.
+- **_update(address from, address to, uint256 value)**: Sobrescribe las funciones de actualización de balances de tokens para ser compatibles con la pausabilidad.
+
+## Despliegue
+El contrato `YoppenToken` fue creado utilizando Visual Studio Code, compilado y desplegado a través de Remix, integrado con MetaMask y utilizando una cuenta de la red de prueba Sepolia.
+
+## Licencia
+Este proyecto está bajo la licencia MIT.
+
+## Resultado del despliegue en Renix
+
+URL TX https://sepolia.etherscan.io/tx/0x410ff30a0749306034cf9c95f1bc70656ee89960720a60ce16a9d56c0bc2325a
+URL Contrato 
