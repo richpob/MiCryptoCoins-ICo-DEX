@@ -17,7 +17,8 @@ Como símbolo, propongo utilizar "ⓨ", que es la letra "Y" dentro de un círcul
 Estas propuestas de acrónimo y símbolo buscan combinar la relevancia cultural del término "Yoppen" con la funcionalidad y el diseño requerido para una identificación clara en el ecosistema de criptomonedas.
 
 ### Imagen de Yoppen
-![image](https://github.com/richpob/MiCryptoCoins-ICo-DEX/assets/133718913/1676f7ed-79dd-46e4-b36e-65899a231731)
+
+<img src="![image](https://github.com/richpob/MiCryptoCoins-ICo-DEX/assets/133718913/1676f7ed-79dd-46e4-b36e-65899a231731)" width="100" height="100">
 
 
 ## Características
