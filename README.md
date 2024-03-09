@@ -18,7 +18,7 @@ Estas propuestas de acrónimo y símbolo buscan combinar la relevancia cultural 
 
 ### Imagen de Yoppen
 
-<img src="![image](https://github.com/richpob/MiCryptoCoins-ICo-DEX/assets/133718913/1676f7ed-79dd-46e4-b36e-65899a231731)" width="100" height="100">
+<img src=![image](https://github.com/richpob/MiCryptoCoins-ICo-DEX/assets/133718913/1676f7ed-79dd-46e4-b36e-65899a231731) width="100" height="100">
 
 
 ## Características
