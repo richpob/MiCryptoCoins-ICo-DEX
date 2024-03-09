@@ -215,9 +215,9 @@ contract YoppenCrowdsale is ReentrancyGuard, Ownable {
 Este contrato básico de Crowdsale permite a los usuarios enviar Ether directamente al contrato y recibir a cambio tokens "Yoppen" según una tasa predefinida. Implementa funciones básicas para validar compras, procesarlas y reenviar los fondos recaudados al propietario del contrato.
 
 ## Pasos para desplegar y usar este contrato:
--Asegúrate de tener el token ERC-20 "Yoppen" desplegado.
--Despliega este contrato Crowdsale en Remix, especificando la tasa de cambio (tokens por Ether) y la dirección del contrato token "Yoppen" como argumentos del constructor.
--Los usuarios pueden enviar Ether al contrato para comprar tokens durante el período de la ICO.
--Este es un ejemplo simplificado. Para una ICO real, considera implementar características adicionales como límites de compra, bonificaciones, y la posibilidad de pausar o finalizar la venta, siempre asegurándote de cumplir con las regulaciones legales aplicables.
+- Asegúrate de tener el token ERC-20 "Yoppen" desplegado.
+- Despliega este contrato Crowdsale en Remix, especificando la tasa de cambio (tokens por Ether) y la dirección del contrato token "Yoppen" como argumentos del constructor.
+- Los usuarios pueden enviar Ether al contrato para comprar tokens durante el período de la ICO.
+- Este es un ejemplo simplificado. Para una ICO real, considera implementar características adicionales como límites de compra, bonificaciones, y la posibilidad de pausar o finalizar la venta, siempre asegurándote de cumplir con las regulaciones legales aplicables.
 
 
