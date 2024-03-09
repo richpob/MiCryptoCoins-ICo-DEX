@@ -28,11 +28,13 @@ Yoppen es una criptomoneda diseñada para promover la conectividad y el apoyo de
 ## Desarrollo
 
 Para comenzar a trabajar con el proyecto, clona este repositorio y sigue los pasos a continuación para instalar las dependencias y compilar los contratos.
+![image](https://github.com/richpob/MiCryptoCoins-ICo-DEX/assets/133718913/c02f1784-68e5-4ea8-890e-a2bb7bcdabfb)
 
-```bash
-npm install
-truffle compile
-```
+Luego usando Visual Code Studio, creamos los códigos del proyecto
+
+![image](https://github.com/richpob/MiCryptoCoins-ICo-DEX/assets/133718913/6eb783c2-9162-43b7-899e-1dfde1d314fc)
+
+
 ## Contribuir
 Si estás interesado en contribuir al proyecto Yoppen, por favor lee CONTRIBUTING.md para más información sobre cómo empezar.
 
