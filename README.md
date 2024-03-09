@@ -139,3 +139,85 @@ URL del Token Yoppen https://sepolia.etherscan.io/token/0xaa7a2a9cc60f5a696f37af
 ### Imagen del contrato Toekn ERC20
 ![image](https://github.com/richpob/MiCryptoCoins-ICo-DEX/assets/133718913/707c175f-f11c-43ec-86eb-15143f2a7735)
 
+# Oferta Inicial de Monedas (ICO)
+Para organizar una Oferta Inicial de Monedas (ICO) para financiar tu proyecto de criptomoneda como "Yoppen" en Ethereum, necesitas crear un contrato de Crowdsale. A continuación, se muestra un ejemplo básico de cómo podría ser este contrato utilizando Solidity y aprovechando las librerías de OpenZeppelin, que proporcionan implementaciones seguras y comprobadas de estos tipos de contratos.
+
+Este ejemplo asume que ya has creado el token ERC-20 "Yoppen" como se describió anteriormente. Ahora, crearemos el contrato Crowdsale que permitirá a los usuarios comprar tu token con Ether.
+
+## Código fuente
+```solidity
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.0;
+
+import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
+import "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol";
+import "@openzeppelin/contracts/security/ReentrancyGuard.sol";
+import "@openzeppelin/contracts/access/Ownable.sol";
+
+contract YoppenCrowdsale is ReentrancyGuard, Ownable {
+    using SafeERC20 for IERC20;
+
+    IERC20 public token;
+    uint256 public rate; // Cantidad de tokens por Ether
+    uint256 public weiRaised; // Total de Ether recaudado
+
+    event TokensPurchased(address indexed purchaser, address indexed beneficiary, uint256 value, uint256 amount);
+
+    constructor(uint256 _rate, address _token) {
+        require(_rate > 0, "YoppenCrowdsale: rate is 0");
+        require(_token != address(0), "YoppenCrowdsale: token is the zero address");
+
+        rate = _rate;
+        token = IERC20(_token);
+    }
+
+    // Función para comprar tokens
+    receive() external payable {
+        buyTokens(msg.sender);
+    }
+
+    function buyTokens(address beneficiary) public nonReentrant payable {
+        uint256 weiAmount = msg.value;
+        _preValidatePurchase(beneficiary, weiAmount);
+
+        // Calcula la cantidad de tokens a comprar
+        uint256 tokens = _getTokenAmount(weiAmount);
+
+        // Actualiza la cantidad de Ether recaudado
+        weiRaised += weiAmount;
+
+        _processPurchase(beneficiary, tokens);
+        emit TokensPurchased(msg.sender, beneficiary, weiAmount, tokens);
+
+        _forwardFunds();
+    }
+
+    function _preValidatePurchase(address beneficiary, uint256 weiAmount) internal pure {
+        require(beneficiary != address(0), "YoppenCrowdsale: beneficiary is the zero address");
+        require(weiAmount != 0, "YoppenCrowdsale: weiAmount is 0");
+    }
+
+    function _getTokenAmount(uint256 weiAmount) internal view returns (uint256) {
+        return weiAmount * rate;
+    }
+
+    function _processPurchase(address beneficiary, uint256 tokenAmount) internal {
+        token.safeTransfer(beneficiary, tokenAmount);
+    }
+
+    // Envía los fondos a la cuenta del propietario/organizador de la ICO
+    function _forwardFunds() internal {
+        payable(owner()).transfer(address(this).balance);
+    }
+}
+
+```
+Este contrato básico de Crowdsale permite a los usuarios enviar Ether directamente al contrato y recibir a cambio tokens "Yoppen" según una tasa predefinida. Implementa funciones básicas para validar compras, procesarlas y reenviar los fondos recaudados al propietario del contrato.
+
+## Pasos para desplegar y usar este contrato:
+-Asegúrate de tener el token ERC-20 "Yoppen" desplegado.
+-Despliega este contrato Crowdsale en Remix, especificando la tasa de cambio (tokens por Ether) y la dirección del contrato token "Yoppen" como argumentos del constructor.
+-Los usuarios pueden enviar Ether al contrato para comprar tokens durante el período de la ICO.
+-Este es un ejemplo simplificado. Para una ICO real, considera implementar características adicionales como límites de compra, bonificaciones, y la posibilidad de pausar o finalizar la venta, siempre asegurándote de cumplir con las regulaciones legales aplicables.
+
+
