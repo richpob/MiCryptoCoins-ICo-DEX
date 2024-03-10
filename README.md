@@ -220,8 +220,9 @@ El contrato es una implementación básica de una ICO donde los compradores pued
 - Este es un ejemplo simplificado. Para una ICO real, considera implementar características adicionales como límites de compra, bonificaciones, y la posibilidad de pausar o finalizar la venta, siempre asegurándote de cumplir con las regulaciones legales aplicables.
 
 ## Despliegue en Remix y Testnet Sepolia de una ICO
-- URL TX:  https://sepolia.etherscan.io/tx/0x398737376af5b9bd2324fbe96bb228ca035b40e39a8572b4d083e1f6ea85cc32
-- URL Contrato ICO : https://sepolia.etherscan.io/address/0x43dc930d55d2a8adebe14a7bb4cf869c8b4473a3
+- URL TX:  https://sepolia.etherscan.io/tx/0xa683a9af34eebc47cb5fbc01f2f68b2bc899a0ecf59926f84dbb6a3318d259d8
+- 
+- URL Contrato ICO : https://sepolia.etherscan.io/address/0x6713096e66c6e68d7d898ab225e91043bb2fad08
 
 
 ## Despliegue en Remix y Testnet Sepolia contrato para Crea una DEX
