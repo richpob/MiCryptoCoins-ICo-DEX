@@ -129,15 +129,15 @@ Este proyecto está bajo la licencia MIT.
 
 ## Resultado del despliegue en Renix Yoppen Token ERC20
 
-URL TX https://sepolia.etherscan.io/tx/0xe39b94713a973d60e80f881bc6d67d2ac06015261c94d49592e55e7ef0cb3642
+- URL TX https://sepolia.etherscan.io/tx/0xe39b94713a973d60e80f881bc6d67d2ac06015261c94d49592e55e7ef0cb3642
 
-URL del Contrato ERC20 https://sepolia.etherscan.io/token/0xa9be8b620119cd83d05c3b75211e8e6d9b27e1ef?a=0x9a9dee7e3e68175549ca5815671cb3717754d29f
+- URL del Contrato ERC20 https://sepolia.etherscan.io/token/0xa9be8b620119cd83d05c3b75211e8e6d9b27e1ef?a=0x9a9dee7e3e68175549ca5815671cb3717754d29f
 
-URL del Token Yoppen 
+- URL del Token Yoppen 
 
 
 ### Imagen del contrato Toekn ERC20
-![image](https://github.com/richpob/MiCryptoCoins-ICo-DEX/assets/133718913/707c175f-f11c-43ec-86eb-15143f2a7735)
+![image](https://github.com/richpob/MiCryptoCoins-ICo-DEX/assets/133718913/5117aa31-6647-47ed-81d6-dc295f911b5c)
 
 
 # Oferta Inicial de Monedas (ICO)
@@ -218,7 +218,7 @@ El contrato es una implementación básica de una ICO donde los compradores pued
 - URL Contrato ICO : https://sepolia.etherscan.io/address/0x43dc930d55d2a8adebe14a7bb4cf869c8b4473a3
 
 
-Despliegue en Remix y Testnet Sepolia contrato para Crea una DEX
+## Despliegue en Remix y Testnet Sepolia contrato para Crea una DEX
 
 URL Contrato DEX https://sepolia.etherscan.io/address/0x888931d52f6c4dc019faf076d76e26e3782bc0be
 URL TX de Creación del Contrato https://sepolia.etherscan.io/tx/0x481e7509795114310bad3de1841abe3e2e7ce4e605590870eb0fa72f4b4fd39c
