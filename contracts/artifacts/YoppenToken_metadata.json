@@ -1096,11 +1096,11 @@
 			]
 		},
 		"contracts/MiYoppenCoins.sol": {
-			"keccak256": "0xe5d528e13f1d75a5f8c6c73d1f5ae58712c64e1a7e29512a5c0f7dc5e8f98f52",
+			"keccak256": "0xb0a01e5c8fb6699d12d9fcdbe11be58b70c3bb4ed39462bf7a0180247ebcf579",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://855e7f717cbb195693cfb26dfb68da9667b44fb26cb08ac06ce5aa9358ec354d",
-				"dweb:/ipfs/QmeqQYpSEbGTfc7xFMZ3EFYTHQxXCF6A986imkVx4We8GM"
+				"bzz-raw://f9843bf808410127e4ee3800d87849b5542355569dab7043ea9d7007727dae6b",
+				"dweb:/ipfs/QmfD3GmvWcwTmTH8MUsMeUEcm81NJKN1ALJEn5xmPFPkSb"
 			]
 		}
 	},

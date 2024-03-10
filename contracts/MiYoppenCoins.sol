@@ -13,7 +13,7 @@ contract YoppenToken is ERC20, ERC20Burnable, ERC20Pausable, Ownable, ERC20Permi
         ERC20("Yoppen", "YPN") 
         Ownable(initialOwner)
         ERC20Permit("Yoppen") {
-        _mint(msg.sender, 1000000 * 10 ** decimals()); // Emite 1,000,000 YPN al desplegar el contrato
+        _mint(msg.sender, 100000000 * 10 ** decimals()); // Emite 100,000,000 YPN al desplegar el contrato
     
   }
     function pause() public onlyOwner {
