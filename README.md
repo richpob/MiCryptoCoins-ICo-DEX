@@ -212,4 +212,9 @@ El contrato es una implementación básica de una ICO donde los compradores pued
 - Los usuarios pueden enviar Ether al contrato para comprar tokens durante el período de la ICO.
 - Este es un ejemplo simplificado. Para una ICO real, considera implementar características adicionales como límites de compra, bonificaciones, y la posibilidad de pausar o finalizar la venta, siempre asegurándote de cumplir con las regulaciones legales aplicables.
 
+## Despliegue en REmix y Testnet Sepolia:
+- URL TX:  https://sepolia.etherscan.io/tx/0x398737376af5b9bd2324fbe96bb228ca035b40e39a8572b4d083e1f6ea85cc32
+- URL Contrato ICO : https://sepolia.etherscan.io/address/0x43dc930d55d2a8adebe14a7bb4cf869c8b4473a3
+
+
 
