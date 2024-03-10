@@ -133,7 +133,7 @@ Este proyecto está bajo la licencia MIT.
 
 - URL del Contrato ERC20 https://sepolia.etherscan.io/token/0xa9be8b620119cd83d05c3b75211e8e6d9b27e1ef?a=0x9a9dee7e3e68175549ca5815671cb3717754d29f
 
-- URL del Token Yoppen 
+- URL del Token Yoppen https://sepolia.etherscan.io/address/0xa9be8b620119cd83d05c3b75211e8e6d9b27e1ef
 
 
 ### Imagen del contrato Toekn ERC20
