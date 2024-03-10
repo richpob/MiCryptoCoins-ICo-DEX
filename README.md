@@ -139,6 +139,9 @@ Este proyecto está bajo la licencia MIT.
 ### Imagen del contrato Toekn ERC20
 ![image](https://github.com/richpob/MiCryptoCoins-ICo-DEX/assets/133718913/5117aa31-6647-47ed-81d6-dc295f911b5c)
 
+### Cartera de Metamak con Token Yoppen
+![image](https://github.com/richpob/MiCryptoCoins-ICo-DEX/assets/133718913/7c403316-33c9-475f-bc82-35b24f09143f)
+
 
 # Oferta Inicial de Monedas (ICO)
 Para organizar una Oferta Inicial de Monedas (ICO) para financiar tu proyecto de criptomoneda como "Yoppen" en Ethereum, necesitas crear un contrato de Crowdsale. A continuación, se muestra un ejemplo básico de cómo podría ser este contrato utilizando Solidity y aprovechando las librerías de OpenZeppelin, que proporcionan implementaciones seguras y comprobadas de estos tipos de contratos.
