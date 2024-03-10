@@ -219,16 +219,26 @@ El contrato es una implementación básica de una ICO donde los compradores pued
 - Los usuarios pueden enviar Ether al contrato para comprar tokens durante el período de la ICO.
 - Este es un ejemplo simplificado. Para una ICO real, considera implementar características adicionales como límites de compra, bonificaciones, y la posibilidad de pausar o finalizar la venta, siempre asegurándote de cumplir con las regulaciones legales aplicables.
 
-## Despliegue en REmix y Testnet Sepolia:
+## Despliegue en Remix y Testnet Sepolia de una ICO
 - URL TX:  https://sepolia.etherscan.io/tx/0x398737376af5b9bd2324fbe96bb228ca035b40e39a8572b4d083e1f6ea85cc32
 - URL Contrato ICO : https://sepolia.etherscan.io/address/0x43dc930d55d2a8adebe14a7bb4cf869c8b4473a3
 
 
 ## Despliegue en Remix y Testnet Sepolia contrato para Crea una DEX
 
-- URL Contrato DEX https://sepolia.etherscan.io/address/0x38794e29d20f175e3d89e8031cb624fc57b9519d
-- URL TX de Creación del Contrato https://sepolia.etherscan.io/tx/0xf451f399caa452ff6e79fde8e071f663fbf37f8a63b6188ca3df22ede3214206
+- URL Contrato DEX https://sepolia.etherscan.io/address/0xe52b699f8dce1276bdc4a21827d9336b809f7618
+- URL TX de Creación del Contrato https://sepolia.etherscan.io/tx/0xc467fb72140c68b6098dd62d936b51e933374652a3ba4db031f3b4a10ff3f75b
 
+###  Traspaso de YPN al Contrato
 
+- URL TX https://sepolia.etherscan.io/tx/0x098594166941c92b9923ff2681fba159229f093ecd095dca10af745a1ee75669
+![image](https://github.com/richpob/MiCryptoCoins-ICo-DEX/assets/133718913/e0f15f1b-b671-49fc-ab50-5b524d8c2d50)
+- Saldo del contrato DEX
+- URL https://sepolia.etherscan.io/token/0xa9be8b620119cd83d05c3b75211e8e6d9b27e1ef?a=0xa9be8b620119cd83d05c3b75211e8e6d9b27e1ef
+ ![image](https://github.com/richpob/MiCryptoCoins-ICo-DEX/assets/133718913/dfe08bb0-606a-489b-90ce-0adb15ed7780)
 
+### Compra de YPN por ETH - Saldo
+
+https://sepolia.etherscan.io/tx/0x88b3d8c9d146657f275a6b6866ca48866ea119887ce7700ef588a34cba25ae4f
+![image](https://github.com/richpob/MiCryptoCoins-ICo-DEX/assets/133718913/01759db0-ee11-491f-84c9-3af33b1b1b83)
 
