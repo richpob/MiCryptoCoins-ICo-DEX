@@ -142,6 +142,9 @@ Este proyecto está bajo la licencia MIT.
 ### Cartera de Metamak con Token Yoppen
 ![image](https://github.com/richpob/MiCryptoCoins-ICo-DEX/assets/133718913/7c403316-33c9-475f-bc82-35b24f09143f)
 
+### Cuenta asignada a Yoppen Token
+![image](https://github.com/richpob/MiCryptoCoins-ICo-DEX/assets/133718913/2a879c77-e41e-42ee-8327-5b7bcd589a8a)
+
 
 # Oferta Inicial de Monedas (ICO)
 Para organizar una Oferta Inicial de Monedas (ICO) para financiar tu proyecto de criptomoneda como "Yoppen" en Ethereum, necesitas crear un contrato de Crowdsale. A continuación, se muestra un ejemplo básico de cómo podría ser este contrato utilizando Solidity y aprovechando las librerías de OpenZeppelin, que proporcionan implementaciones seguras y comprobadas de estos tipos de contratos.
@@ -223,8 +226,8 @@ El contrato es una implementación básica de una ICO donde los compradores pued
 
 ## Despliegue en Remix y Testnet Sepolia contrato para Crea una DEX
 
-URL Contrato DEX https://sepolia.etherscan.io/address/0x888931d52f6c4dc019faf076d76e26e3782bc0be
-URL TX de Creación del Contrato https://sepolia.etherscan.io/tx/0x481e7509795114310bad3de1841abe3e2e7ce4e605590870eb0fa72f4b4fd39c
+- URL Contrato DEX https://sepolia.etherscan.io/address/0x38794e29d20f175e3d89e8031cb624fc57b9519d
+- URL TX de Creación del Contrato https://sepolia.etherscan.io/tx/0xf451f399caa452ff6e79fde8e071f663fbf37f8a63b6188ca3df22ede3214206
 
 
 
