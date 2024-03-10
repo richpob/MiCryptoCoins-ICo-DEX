@@ -186,26 +186,23 @@ contract ICO {
 
 Este código Solidity define un contrato inteligente para una Oferta Inicial de Monedas (ICO, por sus siglas en inglés) utilizando un token ERC20 en la blockchain de Ethereum. A continuación, se detallan los componentes principales del contrato:
 
-Importación del Contrato IERC20 de OpenZeppelin: Se importa la interfaz IERC20 del contrato estándar ERC20 de OpenZeppelin. Esto permite interactuar con cualquier token ERC20, ya que IERC20 define las funciones estándar que debe tener un token ERC20.
+- Importación del Contrato IERC20 de OpenZeppelin: Se importa la interfaz IERC20 del contrato estándar ERC20 de OpenZeppelin. Esto permite interactuar con cualquier token ERC20, ya que IERC20 define las funciones estándar que debe tener un token ERC20.
 
-Variables de Estado:
+- Variables de Estado:
+    - IERC20 public token: Almacena la dirección del contrato del token ERC20 que se venderá en la ICO.
+    - address public wallet: Dirección de la billetera que recibe el ether (ETH) pagado por los compradores de tokens.
+    - uint256 public rate: Tasa de conversión entre ether y el token ERC20. Indica cuántos tokens se pueden comprar con 1 ETH.
+    - Evento TokensPurchased: Un evento que se emite cada vez que se compran tokens. Esto permite a las aplicaciones externas y a los exploradores de blockchain rastrear las compras de tokens.
 
-IERC20 public token: Almacena la dirección del contrato del token ERC20 que se venderá en la ICO.
-address public wallet: Dirección de la billetera que recibe el ether (ETH) pagado por los compradores de tokens.
-uint256 public rate: Tasa de conversión entre ether y el token ERC20. Indica cuántos tokens se pueden comprar con 1 ETH.
-Evento TokensPurchased: Un evento que se emite cada vez que se compran tokens. Esto permite a las aplicaciones externas y a los exploradores de blockchain rastrear las compras de tokens.
-
-Constructor: Establece las condiciones iniciales del contrato de ICO:
-
-Verifica que la dirección del token ERC20 y la dirección de la billetera no sean la dirección cero.
-Inicializa las variables de estado token, wallet y rate con los valores proporcionados.
-Función buyTokens:
-
-Acepta dos parámetros: la dirección del beneficiario que recibirá los tokens (beneficiary) y la cantidad de ether (weiAmount) que se está pagando.
-Verifica que la dirección del beneficiario no sea cero y que la cantidad de ether pagada sea mayor que cero.
-Calcula la cantidad de tokens a transferir basándose en la tasa (rate) y la cantidad de ether recibida.
-Transfiere los tokens del wallet del vendedor al beneficiario utilizando token.transferFrom.
-Fallback Function (receive()): Permite que el contrato reciba ether directamente (sin llamar a una función específica). Cuando se envía ether al contrato, automáticamente llama a buyTokens para el remitente y el valor enviado.
+- Constructor: Establece las condiciones iniciales del contrato de ICO:
+    - Verifica que la dirección del token ERC20 y la dirección de la billetera no sean la dirección cero.
+    - Inicializa las variables de estado token, wallet y rate con los valores proporcionados.
+- Función buyTokens:
+    - Acepta dos parámetros: la dirección del beneficiario que recibirá los tokens (beneficiary) y la cantidad de ether (weiAmount) que se está pagando.
+    - Verifica que la dirección del beneficiario no sea cero y que la cantidad de ether pagada sea mayor que cero.
+    - Calcula la cantidad de tokens a transferir basándose en la tasa (rate) y la cantidad de ether recibida.
+    - Transfiere los tokens del wallet del vendedor al beneficiario utilizando token.transferFrom.
+    - Fallback Function (receive()): Permite que el contrato reciba ether directamente (sin llamar a una función específica). Cuando se envía ether al contrato, automáticamente llama a buyTokens para el remitente y el valor enviado.
 
 El contrato es una implementación básica de una ICO donde los compradores pueden enviar ether al contrato y recibir tokens ERC20 a cambio, según una tasa predefinida. Este mecanismo es fundamental en el mundo de las criptomonedas y las finanzas descentralizadas (DeFi), permitiendo a los proyectos recaudar fondos vendiendo tokens propios a los inversores
 
