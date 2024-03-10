@@ -243,3 +243,4 @@ El contrato es una implementación básica de una ICO donde los compradores pued
 https://sepolia.etherscan.io/tx/0x88b3d8c9d146657f275a6b6866ca48866ea119887ce7700ef588a34cba25ae4f
 ![image](https://github.com/richpob/MiCryptoCoins-ICo-DEX/assets/133718913/01759db0-ee11-491f-84c9-3af33b1b1b83)
 
+ 
