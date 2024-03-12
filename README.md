@@ -63,7 +63,7 @@ Para más información, por favor contacta a richard.poblete@hotmail.com.
 
 ## Descripción
 `YoppenToken` es un token ERC-20 desarrollado en Solidity que incorpora varias extensiones de la librería OpenZeppelin para proporcionar funcionalidades avanzadas como quema de tokens, pausabilidad y permisos. Este token ha sido diseñado para ser utilizado en la red de prueba Sepolia de Ethereum, facilitando una amplia gama de operaciones financieras descentralizadas.
-## Código fuente Solidity
+## Código fuente Solidity de Toekn ERC Yoppen
 ```bash
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.20;
@@ -151,7 +151,7 @@ Para organizar una Oferta Inicial de Monedas (ICO) para financiar tu proyecto de
 
 Este ejemplo asume que ya has creado el token ERC-20 "Yoppen" como se describió anteriormente. Ahora, crearemos el contrato Crowdsale que permitirá a los usuarios comprar tu token con Ether.
 
-## Código fuente
+## Código fuente contrato ICO
 ```solidity
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
@@ -224,6 +224,21 @@ El contrato es una implementación básica de una ICO donde los compradores pued
 - 
 - URL Contrato ICO : https://sepolia.etherscan.io/address/0x6713096e66c6e68d7d898ab225e91043bb2fad08
 
+## Codigo fuente de Contrato DEX
+```solidity
+
+```
+
+Este código Solidity define un contrato inteligente para un intercambio descentralizado (DEX) llamado YoppenDEX, que permite a los usuarios comprar y vender tokens Yoppen utilizando Ether. El contrato utiliza la biblioteca OpenZeppelin, específicamente el contrato IERC20 para la interacción con tokens ERC20, lo que asegura compatibilidad y seguridad en las operaciones con tokens.
+- Variables y Eventos: Define variables para almacenar el token Yoppen (yoppenToken), el propietario del contrato (owner), y el precio del token (tokenPrice). También declara eventos Bought y Sold para emitirlos cuando se realicen compras y ventas de tokens, respectivamente.
+- Constructor: Inicializa el contrato con la dirección del token Yoppen y el precio del token. Establece al creador del contrato como el propietario.
+- Modificador onlyOwner: Asegura que solo el propietario del contrato pueda ejecutar ciertas funciones.
+- Función buyTokens: Permite a los usuarios comprar tokens Yoppen enviando Ether. Calcula la cantidad de tokens a comprar basándose en el precio del token y verifica que haya suficientes tokens en el contrato para completar la compra antes de transferir los tokens al comprador y emitir el evento Bought.
+- Función sellTokens: Permite a los usuarios vender tokens Yoppen al contrato a cambio de Ether. Verifica que el usuario tenga suficientes tokens y la autorización para transferirlos al contrato antes de realizar la transferencia y enviar Ether al vendedor, emitiendo el evento Sold.
+- Función setTokenPrice: Permite al propietario cambiar el precio del token Yoppen.
+- Función transferOwnership: Permite al propietario actual transferir la propiedad del contrato a otra dirección.
+
+Este contrato es un ejemplo simple de un DEX que facilita la compra y venta de un token ERC20 específico, utilizando prácticas de seguridad como el uso de require para validar las condiciones antes de ejecutar transacciones y modificadores para restringir el acceso a funciones críticas.
 
 ## Despliegue en Remix y Testnet Sepolia contrato para Crea una DEX
 
