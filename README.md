@@ -303,35 +303,33 @@ Este contrato es un ejemplo simple de un DEX que facilita la compra y venta de u
 ## Pasos para la compilación y despliegue del contrato DEX
 Para desplegar el contrato YoppenDEX utilizando Remix y una wallet de MetaMask, sigue estos pasos:
 
-1. Preparación:
+1.Preparación:
 - Asegúrate de tener MetaMask instalado en tu navegador y de tener una cuenta configurada.
-Agrega algo de Ether en tu cuenta de MetaMask para cubrir los costos de gas del despliegue del contrato. Esto puede ser en la red de Ethereum mainnet o en una testnet como Ropsten o Rinkeby, dependiendo de dónde quieras desplegar tu contrato.
-2. Abrir Remix:
+Agrega algo de Ether en tu cuenta de MetaMask para cubrir los costos de gas del despliegue del contrato. Esto puede ser en la red de Ethereum mainnet o en una testnet como la que usamos en este proyecto la testnet Sepolia, dependiendo de dónde quieras desplegar tu contrato.
+2.Abrir Remix:
 - Ve a Remix, que es un IDE de Solidity basado en el navegador.
-3. Pegar el Código:
+3.Pegar el Código:
 - Crea un nuevo archivo en Remix y pega el código fuente del contrato YoppenDEX.
-4. Compilar el Contrato:
+4.Compilar el Contrato:
 - En Remix, ve a la pestaña "Solidity compiler".
 - Selecciona la versión de Solidity que coincida con la versión utilizada en tu contrato (en este caso, ^0.8.20).
 - Haz clic en "Compile".
-5. Conectar MetaMask:
+5.Conectar MetaMask:
 - En Remix, ve a la pestaña "Deploy & run transactions".
 - Selecciona "Injected Web3" como Environment. Esto debería conectar Remix con tu wallet de MetaMask.
 - Si MetaMask solicita permiso para conectarse a Remix, apruébalo.
-6. Desplegar el Contrato:
+6.Desplegar el Contrato:
 - En el campo "Contract" selecciona YoppenDEX.
 - Introduce los parámetros necesarios para el constructor del contrato, como la dirección del token ERC20 Yoppen YON y el precio del token.
 - Haz clic en "Deploy". MetaMask te pedirá que confirmes la transacción, incluyendo el costo del gas.
 - Una vez confirmada la transacción y procesada en la blockchain, tu contrato estará desplegado.
-7. Interactuar con el Contrato:
+7.Interactuar con el Contrato:
 - Después del despliegue, podrás ver tu contrato en la sección "Deployed Contracts" en Remix.
 - Aquí puedes interactuar con las funciones del contrato, como buyTokens, sellTokens, setTokenPrice, y transferOwnership.
-8. Verificar y Publicar (opcional):
+8.Verificar y Publicar (opcional):
 - Para que otros puedan interactuar fácilmente con tu contrato y verificar su código, considera verificar y publicar el código fuente en Etherscan o en el explorador de bloques correspondiente a la red que utilizaste para el despliegue.
 
-
-Este proceso te permite desplegar un contrato en la blockchain utilizando Remix, un IDE popular para el desarrollo de smart contracts en Solidity, y MetaMask, una de las wallets de criptomonedas más utilizadas.
-
+Este proceso te permite desplegar un contrato en la blockchain utilizando Remix, de in smart contracts en Solidity, y MetaMask.
 
 ## Despliegue en Remix y Testnet Sepolia contrato para Crea una DEX
 
