@@ -64,7 +64,7 @@ Para más información, por favor contacta a richard.poblete@hotmail.com.
 ## Descripción
 `YoppenToken` es un token ERC-20 desarrollado en Solidity que incorpora varias extensiones de la librería OpenZeppelin para proporcionar funcionalidades avanzadas como quema de tokens, pausabilidad y permisos. Este token ha sido diseñado para ser utilizado en la red de prueba Sepolia de Ethereum, facilitando una amplia gama de operaciones financieras descentralizadas.
 ## Código fuente Solidity de Toekn ERC Yoppen
-```bash
+```solidity
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.20;
 
